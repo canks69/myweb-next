@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  next-projek:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_SHOW_LOGGER="false"
+      - DATABASE_URL="file:./dev.db"
+    networks:
+      - traefik
+networks:
+  traefik:
+    external: true

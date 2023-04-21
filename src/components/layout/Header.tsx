@@ -36,10 +36,8 @@ export default function Header() {
       )}
     >
       <div className='layout flex h-20 items-center justify-between'>
-        <p className='text-2xl font-bold'>
-          <PrimaryLink className='text-2xl' href='/'>
-            Canks
-          </PrimaryLink>
+        <p className='text-lg font-bold'>
+          <PrimaryLink href='/'>Canks</PrimaryLink>
           <ThemeButton />
         </p>
         <nav>

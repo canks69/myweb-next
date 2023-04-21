@@ -13,7 +13,7 @@ export default function ThemeButton({ className, ...rest }: ThemeButtonProps) {
 
   return (
     <button
-      className={clsx('m-1 my-0 px-5 text-lg outline-none', className)}
+      className={clsx('m-1 my-0 px-2 text-lg outline-none', className)}
       {...rest}
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
     >
