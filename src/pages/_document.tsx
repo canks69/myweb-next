@@ -28,7 +28,7 @@ class MyDocument extends Document {
             defer
             data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID || ''}
             src='https://umami.thcl.dev/umami.js'
-            data-domains='theodorusclarence.com'
+            data-domains='canks.dev'
           />
         </Head>
         <body className='dark:bg-dark bg-white transition-colors dark:text-white'>

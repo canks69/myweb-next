@@ -11,7 +11,7 @@ import '@/styles/nprogress.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider attribute='class' defaultTheme='dark' enableSystem={false}>
+    <ThemeProvider attribute='class' defaultTheme='light' enableSystem={false}>
       <SWRConfig
         value={{
           fetcher: (url) => axios.get(url).then((res) => res.data),

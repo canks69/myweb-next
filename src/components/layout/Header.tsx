@@ -31,7 +31,7 @@ export default function Header() {
   return (
     <header
       className={clsx(
-        'sticky top-0 z-50 transition-shadow',
+        'dark:bg-dark sticky top-0 z-50 bg-white',
         !onTop && 'shadow-sm'
       )}
     >
