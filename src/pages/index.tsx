@@ -39,13 +39,6 @@ export default function HomePage() {
             >
               I am a software developer working at PT. AZ Solusindo Technology
             </p>
-            {/* <p
-              className='mt-3 max-w-4xl leading-relaxed text-gray-700 dark:text-gray-200 md:mt-4 md:text-lg 2xl:text-xl'
-              data-fade='4'
-            >
-              Don't forget to sign my{' '}
-              <CustomLink href='/'>canks</CustomLink>!
-            </p> */}
             <div
               data-fade='5'
               className='mt-8 flex flex-wrap gap-4 md:!text-lg'

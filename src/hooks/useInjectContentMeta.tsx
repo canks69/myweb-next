@@ -4,7 +4,7 @@ import useSWR from 'swr';
 import { pickContentMeta } from '@/lib/contentMeta';
 import { cleanBlogPrefix } from '@/lib/helper';
 
-import { contentMetaFlag } from '@/constants/env';
+import { contentMetaFlag } from '@/contents/env';
 
 import {
   ContentType,

@@ -1985,10 +1985,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^18.0.35":
-  "integrity" "sha512-6Laome31HpetaIUGFWl1VQ3mdSImwxtFZ39rh059a1MNnKGqBpC88J6NJ8n/Is3Qx7CefDGLgf/KhN/sYCf7ag=="
-  "resolved" "https://registry.npmjs.org/@types/react/-/react-18.0.35.tgz"
-  "version" "18.0.35"
+"@types/react@*", "@types/react@^18.2.37":
+  "integrity" "sha512-RGAYMi2bhRgEXT3f4B92WTohopH6bIXw05FuGlmJEnv/omEn190+QYEIYxIAuIBdKgboYYdVved2p1AxZVQnaw=="
+  "resolved" "https://registry.npmjs.org/@types/react/-/react-18.2.37.tgz"
+  "version" "18.2.37"
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -4187,11 +4187,6 @@
   "integrity" "sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw=="
   "resolved" "https://registry.npmjs.org/human-signals/-/human-signals-2.1.0.tgz"
   "version" "2.1.0"
-
-"husky@^7.0.4":
-  "integrity" "sha512-vbaCKN2QLtP/vD4yvs6iz6hBEo6wkSzs8HpRah1Z6aGmF2KW5PdYuAd7uX5a+OyBZHBhd+TFLqgjUgytQr4RvQ=="
-  "resolved" "https://registry.npmjs.org/husky/-/husky-7.0.4.tgz"
-  "version" "7.0.4"
 
 "iconv-lite@0.4.24":
   "integrity" "sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA=="

@@ -63,9 +63,6 @@ export default function SingleProjectPage({ code, frontmatter }: ProjectType) {
               alt='Icon'
             />
             <h1 className='mt-4'>{frontmatter.title}</h1>
-            <p className='mt-2 text-sm text-gray-600 dark:text-gray-300'>
-              {frontmatter.description}
-            </p>
             <div className='mt-2 flex flex-wrap items-center justify-start gap-3 text-sm font-medium text-gray-600 dark:text-gray-300'></div>
             {frontmatter.category && (
               <p className='mt-2 flex items-center justify-start gap-2 text-sm text-gray-600 dark:text-gray-300'>

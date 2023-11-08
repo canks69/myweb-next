@@ -11,6 +11,12 @@ type ProjectCardProps = {
 } & React.ComponentPropsWithoutRef<'li'>;
 
 export default function ProjectCard({ project, className }: ProjectCardProps) {
+  const maxDescriptionLength = 130;
+  const truncatedDescription =
+    project.description.length > maxDescriptionLength
+      ? project.description.substring(0, maxDescriptionLength) + '...'
+      : project.description;
+
   return (
     <li
       className={clsx(
@@ -29,7 +35,7 @@ export default function ProjectCard({ project, className }: ProjectCardProps) {
       >
         <h4>{project.title}</h4>
         <p className='mb-auto text-sm text-gray-700 dark:text-gray-300'>
-          {project.description}
+          {truncatedDescription}
         </p>
         <NextImage
           useSkeleton
