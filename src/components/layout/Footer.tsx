@@ -7,7 +7,7 @@ export default function Footer() {
     <div className='layout relative flex flex-col items-center justify-center py-0 text-center'>
       <footer className='absolute bottom-2 text-gray-600 dark:text-gray-300'>
         © {new Date().getFullYear()} By{' '}
-        <UnderlineLink href='https://www.canks.dev'>Canks</UnderlineLink>
+        <UnderlineLink href='https://canks.dev'>Canks</UnderlineLink>
       </footer>
     </div>
   );
