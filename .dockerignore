@@ -1,0 +1,23 @@
+# Ignore Node.js development files
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Ignore source code files that are not needed in the production image
+tests/
+*.test.js
+*.test.ts
+
+# Ignore development and build-specific files
+*.log
+*.env
+*.env.local
+*.env.development
+*.env.test
+*.env.production
+.DS_Store
+
+# Ignore version control files and directories
+.git
+.gitignore
+.gitattributes

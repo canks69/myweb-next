@@ -1,13 +1,14 @@
-version: "3"
+version: '3'
 
 services:
-  next-projek:
-    build: .
-    ports:
-      - "3000:3000"
+  canksweb:
+    image: registry.canks.dev/canksweb:latest
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.canksweb.rule=Host(`canks.dev`)"
+    restart: unless-stopped
     environment:
-      - NEXT_PUBLIC_SHOW_LOGGER="false"
-      - DATABASE_URL="file:./dev.db"
+      - NEXT_PUBLIC_SHOW_LOGGER=false
     networks:
       - traefik
 networks:
