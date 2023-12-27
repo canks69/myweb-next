@@ -12,7 +12,7 @@ export default function useLoaded() {
     } else {
       setTimeout(() => {
         setIsLoaded(true);
-      }, 200);
+      }, 500);
     }
   }, [preloaded]);
 

@@ -9,11 +9,13 @@ import ProjectCard from '@/components/content/projeks/ProjectCard';
 import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
 import Tooltip from '@/components/Tooltip';
+import CardImageSkeleton from "@/components/skeletons/CardImageSkelaton";
 
 export default function Projects({
   projects,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const isLoaded = useLoaded();
+  
   return (
     <Layout>
       <Seo
@@ -33,9 +35,13 @@ export default function Projects({
               data-fade='2'
               className='mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-3'
             >
-              {projects.map((project) => (
+            {isLoaded ? (
+              projects.map((project) => (
                 <ProjectCard key={project.slug} project={project} />
-              ))}
+              ))
+            ) : (
+              <CardImageSkeleton count={3} />
+            )}
             </ul>
           </div>
         </section>
