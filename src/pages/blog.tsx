@@ -5,11 +5,9 @@ import * as React from 'react';
 import { getAllFilesFrontmatter } from '@/lib/mdx';
 import useLoaded from '@/hooks/useLoaded';
 
-import ProjectCard from '@/components/content/projeks/ProjectCard';
 import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
 import Tooltip from '@/components/Tooltip';
-import CardImageSkeleton from "@/components/skeletons/CardImageSkelaton";
 import BlogCard from "@/components/content/blog/BlogCard";
 import CardBlogSkeleton from "@/components/skeletons/CardBlogSkelaton";
 
@@ -53,6 +51,5 @@ export default function Blog({
 
 export async function getStaticProps() {
   const blogs = await getAllFilesFrontmatter('blog');
-  
   return { props: { blogs } };
 }
