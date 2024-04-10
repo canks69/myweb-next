@@ -44,7 +44,7 @@ export default function About() {
                   along the way. That's it and Thank you!
                 </p>
               </article>
-              <h3 className='mt-12'>Current Favorite Tech Stack</h3>
+              <h3 className='mt-12 justify-center text-center' data-fade='6'>Current Favorite Tech Stack</h3>
               <figure className='mt-2'>
                 <TechStack />
               </figure>

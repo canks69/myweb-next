@@ -5,7 +5,6 @@ import { usePreloadState } from '@/context/PreloadContext';
 export default function useLoaded() {
   const preloaded = usePreloadState();
   const [isLoaded, setIsLoaded] = React.useState<boolean>(false);
-
   React.useEffect(() => {
     if (preloaded) {
       setIsLoaded(true);
@@ -15,6 +14,5 @@ export default function useLoaded() {
       }, 500);
     }
   }, [preloaded]);
-
   return isLoaded;
 }

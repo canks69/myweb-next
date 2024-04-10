@@ -4,8 +4,8 @@ services:
   canksweb:
     image: registry.canks.dev/canksweb:latest
     labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.canksweb.rule=Host(`canks.dev`, `www.canks.dev`)"
+      - 'traefik.enable=true'
+      - 'traefik.http.routers.canksweb.rule=Host(`canks.dev`, `www.canks.dev`)'
     restart: unless-stopped
     environment:
       - NEXT_PUBLIC_SHOW_LOGGER=false

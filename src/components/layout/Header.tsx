@@ -7,7 +7,6 @@ import PrimaryLink from '@/components/links/PrimaryLink';
 
 const links = [
   { href: '/', label: 'Home' },
-  { href: '/blog', label: 'Blog' },
   { href: '/projects', label: 'Projects' },
   { href: '/about', label: 'About' },
 ];
@@ -38,7 +37,6 @@ export default function Header() {
       <div className='layout flex h-20 items-center justify-between'>
         <p className='text-lg font-bold'>
           <PrimaryLink href='/'>Canks</PrimaryLink>
-          <ThemeButton />
         </p>
         <nav>
           <ul className='flex items-center justify-between space-x-4'>
@@ -56,6 +54,9 @@ export default function Header() {
                 </PrimaryLink>
               </li>
             ))}
+            <li>
+              <ThemeButton />
+            </li>
           </ul>
         </nav>
       </div>
